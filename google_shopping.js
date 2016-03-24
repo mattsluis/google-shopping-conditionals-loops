@@ -9,7 +9,7 @@ for (var i=0;i<data['items'].length;i++) {
 }
 console.log(count + ' items');
 // #1 Answer: 25 items have kind of shopping#product
-//
+// #1-b: can be found in currentItemCount
 //
 //Q#2 find all items with backorder inv > 0
 //
@@ -23,7 +23,7 @@ for (var i=0; i<data['items'].length; i++) {
 }
 //
 //
-//Q#3
+//Q#3 find all items with more than one image link
 //
 //
 for (var i = 0; i < data['items'].length; i++) {
@@ -34,7 +34,7 @@ for (var i = 0; i < data['items'].length; i++) {
 }
 //
 //
-//Q#4
+//Q#4 find all items with brand canon
 //c ***CASE SENSITIVITY******
 //
 var count = 0
@@ -50,7 +50,7 @@ for (i = 0; i < data['items'].length; i++) {
 //
 var count = 0
 for (i = 0; i < data['items'][i].length; i++) {
-  if (data['items'][i].product.brand.lowercase() === "canon") && (data['items'[i].product.author.name[0].indexOf("eBay") {
+  if (data['items'][i].product.brand.tolowercase() === "canon") && (data['items'[i].product.author.name[0].indexOf("eBay") {
     console.log(data.items[i].product.title);
   }
 }
@@ -59,11 +59,12 @@ for (i = 0; i < data['items'][i].length; i++) {
 //
 //
 //Q#6 Print all the products with their brand, price, and a image link
-//6.) Print all the products with their brand, price, and a image link
 //
-
+//
 var count = 0
   for (i = 0; i < data['items'][i].length; i++) {
+    if (data['items'][i].product.title()
+      console.log()
 
 
   }
